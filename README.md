@@ -1,27 +1,49 @@
-# PersonalSite
+<p align="center">
+  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby Minimal TypeScript Starter
+</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+## 🚀 Quick start
 
-## Development server
+1.  **Create a Gatsby site.**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
 
-## Code scaffolding
+    ```shell
+    # create a new Gatsby site using the minimal TypeScript starter
+    npm init gatsby -- -ts
+    ```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2.  **Start developing.**
 
-## Build
+    Navigate into your new site’s directory and start it up.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+    ```shell
+    cd my-gatsby-site/
+    npm run develop
+    ```
 
-## Running unit tests
+3.  **Open the code and start customizing!**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    Your site is now running at http://localhost:8000!
 
-## Running end-to-end tests
+    Edit `src/pages/index.tsx` to see your site update in real-time!
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+4.  **Learn more**
 
-## Further help
+    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🚀 Quick start (Netlify)
+
+Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+
+[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
