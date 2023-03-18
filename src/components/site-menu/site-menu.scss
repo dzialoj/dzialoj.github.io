@@ -1,0 +1,19 @@
+.btn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 35px;
+
+  &:hover {
+    .center-line {
+      x: 0;
+    }
+  }
+
+  .center-line {
+    transition: x 200ms ease-in;
+  }
+}

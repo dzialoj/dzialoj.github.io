@@ -1,0 +1,11 @@
+@use './variables.scss' as variables;
+
+html {
+  background-color: variables.$primary-color;
+  color: variables.$white-color;
+}
+
+.site-container {
+  position: relative;
+  font-family: variables.$primary-font;
+}
