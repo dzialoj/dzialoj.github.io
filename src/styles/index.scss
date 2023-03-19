@@ -3,9 +3,16 @@
 html {
   background-color: variables.$primary-color;
   color: variables.$white-color;
+  margin: 0;
+}
+
+body {
+  margin: 0;
 }
 
 .site-container {
   position: relative;
   font-family: variables.$primary-font;
+  display: flex;
+  justify-content: center;
 }
