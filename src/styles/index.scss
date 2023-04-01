@@ -14,5 +14,7 @@ body {
   position: relative;
   font-family: variables.$primary-font;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }

@@ -1,11 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import './home-section.scss';
 import { IBubble } from '../../../models/bubble.model';
+import useScroll from '../../../hooks/useScroll';
+
+interface ILink {
+  title: string;
+  anchor: string;
+}
 
 export default function HomeSection(): JSX.Element {
+  const { animatedScrollTo } = useScroll();
   const header: string = "Hi, I'm Jonathan!";
   const infoParagraph: string =
     "I am a Senior Software Engineer with a plethora of experience in modern front-end and cross platform mobile application development. This needs to be edited because I hate how that sounds and don't have enough brainpower to articulate myself correctly. This will also be added to some CMS anyway.";
+  const links: ILink[] = [
+    {
+      title: 'Projects',
+      anchor: 'projects',
+    },
+    {
+      title: 'Contact',
+      anchor: 'contact',
+    },
+  ];
 
   // Bubbles
   const fillColors: string[] = ['#ff5e5b', '#091516'];
@@ -73,6 +90,18 @@ export default function HomeSection(): JSX.Element {
         <div>
           <h1>{header}</h1>
           <p>{infoParagraph}</p>
+          <div className='links'>
+            {links.map((x, i) => (
+              <>
+                <a onClick={(e) => animatedScrollTo(x.anchor)}>{x.title}</a>
+                {i !== links.length - 1 ? (
+                  <svg className='seperator'>
+                    <circle cx={4} cy={4} r={4} />
+                  </svg>
+                ) : null}
+              </>
+            ))}
+          </div>
           <div className='social-media'>
             <button>
               <svg
